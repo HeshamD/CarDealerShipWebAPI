@@ -1,0 +1,14 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.ComponentModel.DataAnnotations;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using Microsoft.EntityFrameworkCore;
+global using CarDealerShipWebAPI.Infrastructure.Entities;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using CarDealerShipWebAPI.Infrastructure.FluentApis;
+global using CarDealerShipWebAPI.Infrastructure.IRepos;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using System.Linq.Expressions;
+global using System.Text.Json.Serialization;
