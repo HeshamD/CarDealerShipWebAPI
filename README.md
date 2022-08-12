@@ -1,6 +1,4 @@
 # CarDealerShipWebAPI
-Car DealerShip Web API
-
 
 Api stands for Application Programming Interface, which it's a set of functions that allows the application to access data and interact with external software components
 operating systems, or microservices.
