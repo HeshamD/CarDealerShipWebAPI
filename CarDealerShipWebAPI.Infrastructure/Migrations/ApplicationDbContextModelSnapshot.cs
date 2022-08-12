@@ -91,8 +91,8 @@ namespace CarDealerShipWebAPI.Infrastructure.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
-                    b.Property<string>("Vehicle_Price")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<double>("Vehicle_Price")
+                        .HasColumnType("float");
 
                     b.Property<string>("Vehicle_Trim")
                         .HasColumnType("nvarchar(max)");
@@ -127,7 +127,7 @@ namespace CarDealerShipWebAPI.Infrastructure.Migrations
                             Vehicle_Make = "hunda",
                             Vehicle_Mileage = "1200",
                             Vehicle_Model = "HR-v",
-                            Vehicle_Price = "20000",
+                            Vehicle_Price = 20000.0,
                             Vehicle_Trim = "4",
                             Vehicle_VinNumber = "1212313",
                             Vehicle_Year = "2022"

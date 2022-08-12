@@ -7,5 +7,14 @@ namespace CarDealerShipWebAPI.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
+        //Home 
+
+        [HttpGet]
+        [Route("/")]
+        public IActionResult Home()
+        {
+            return StatusCode(200);
+        }
+
     }
 }

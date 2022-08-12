@@ -35,7 +35,7 @@ namespace CarDealerShipWebAPI.Infrastructure.ReposImp
 
         public async Task<VehicleEntity> GetVehicleByIdAsync(int id)
         {
-            var vehicle = await db.Vehicles.SingleOrDefaultAsync(v => v.VehicleId == id);
+            var vehicle = await db.Vehicles.FindAsync(id);
             return vehicle;
         }
 

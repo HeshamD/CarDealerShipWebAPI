@@ -27,7 +27,7 @@ namespace CarDealerShipWebAPI.Infrastructure
                 Vehicle_Make = "hunda",
                 Vehicle_Model = "HR-v",
                 Vehicle_Mileage = "1200",
-                Vehicle_Price = "20000",
+                Vehicle_Price = 20000,
                 Vehicle_VinNumber = "1212313",
                 Vehicle_Trim = "4",
                 Vehicle_Year = "2022",

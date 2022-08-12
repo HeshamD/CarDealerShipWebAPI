@@ -4,7 +4,7 @@
 
 namespace CarDealerShipWebAPI.Infrastructure.Migrations
 {
-    public partial class initialWithSeedings : Migration
+    public partial class seedingData : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -33,7 +33,7 @@ namespace CarDealerShipWebAPI.Infrastructure.Migrations
                     Vehicle_VinNumber = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     Vehicle_Mileage = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Vehicle_Exterior_Color = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Vehicle_Price = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Vehicle_Price = table.Column<double>(type: "float", nullable: false),
                     Vehicle_Trim = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Vehicle_FuelType = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Vehicle_Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -58,6 +58,11 @@ namespace CarDealerShipWebAPI.Infrastructure.Migrations
                 table: "VehicleCategory",
                 columns: new[] { "VehicleCategoryId", "VehicleCategoryName" },
                 values: new object[] { 1, "Cars" });
+
+            migrationBuilder.InsertData(
+                table: "Vehicle",
+                columns: new[] { "VehicleId", "Condition", "IsAvaliable", "Vehicle_Category_id", "Vehicle_Cylinders", "Vehicle_Description", "Vehicle_Doors", "Vehicle_Exterior_Color", "Vehicle_FuelType", "Vehicle_Make", "Vehicle_Mileage", "Vehicle_Model", "Vehicle_Price", "Vehicle_Trim", "Vehicle_VinNumber", "Vehicle_Year" },
+                values: new object[] { 1, "good", true, 1, "4", "nice car", "4", "black", "gas", "hunda", "1200", "HR-v", 20000.0, "4", "1212313", "2022" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Vehicle_Vehicle_Category_id",

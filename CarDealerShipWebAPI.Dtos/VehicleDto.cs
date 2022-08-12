@@ -14,7 +14,7 @@ namespace CarDealerShipWebAPI.Dtos
         public string? Vehicle_VinNumber { get; set; }
         public string? Vehicle_Mileage { get; set; }
         public string? Vehicle_Exterior_Color { get; set; }
-        public string? Vehicle_Price { get; set; }
+        public double Vehicle_Price { get; set; }
         public string? Vehicle_Trim { get; set; }
         public string? Vehicle_FuelType { get; set; }
         public string? Vehicle_Description { get; set; }
